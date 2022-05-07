@@ -35,6 +35,8 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'ESMusicPodLib' => ['ESMusicPodLib/Assets/*.png']
   # }
+  
+  #s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
