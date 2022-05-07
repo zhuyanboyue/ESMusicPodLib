@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DED56F8818304A1F0B7335A78F3F7E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		40A1E7EB064E87B47DFFE8E550B57105 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AF0F6C7FEBDB556EFCFFF567821EE9 /* ReplaceMe.m */; };
+		670F0DABD31913548910CEAF36E222B5 /* ESMusicPodLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 097BE382107BDE2F51331343EE5BC5C4 /* ESMusicPodLib-dummy.m */; };
+		757AEDF30B36933CBA6F2741078BDCE5 /* Pods-ESMusicPodLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9559388AE04A314BBD3F816653E37E2 /* Pods-ESMusicPodLib_Example-dummy.m */; };
+		868F55EFF2680AC1BE501BCEA94085E4 /* Pods-ESMusicPodLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F402EADBBBA4F2580B406BD4D313C /* Pods-ESMusicPodLib_Tests-dummy.m */; };
+		A14A52CD4DFE7B34FE410DA9559B9579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A30B41F0A2809403BEF117784FDE8491 /* Pods-ESMusicPodLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D85B61B6F20F5274F7D73EA70480DF /* Pods-ESMusicPodLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD785AD7A0BA7154608BE1EF7B1EF10D /* Pods-ESMusicPodLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CED63D1AACD96C1B87008385105265D4 /* Pods-ESMusicPodLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7360C4EB664BCE5B422389DA4A3F268 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D97FF4FE52BADAE8889B59E4DCAB1FC1 /* ESMusicPodLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA572EBB529E1DC36F8C88ACE1D602 /* ESMusicPodLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82FB615C50B7C8650F19FA8C264026C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77F67179F819413C0742483910BFED20;
+			remoteInfo = ESMusicPodLib;
+		};
+		BC4B66B96C6C2939FE8D9AF033FF3349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB557324FED2C4261F652977411672F5;
+			remoteInfo = "Pods-ESMusicPodLib_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015695C39A6CB1E634462F54D340CBD3 /* ESMusicPodLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ESMusicPodLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		097BE382107BDE2F51331343EE5BC5C4 /* ESMusicPodLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESMusicPodLib-dummy.m"; sourceTree = "<group>"; };
+		1225C49ECE34CD20EB4175B46E7AD74B /* Pods-ESMusicPodLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESMusicPodLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19E29B85D41764379186745960C312E8 /* ESMusicPodLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ESMusicPodLib.modulemap; sourceTree = "<group>"; };
+		1B4D83EF25B3B991870C9737A6856ED9 /* ESMusicPodLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ESMusicPodLib-Info.plist"; sourceTree = "<group>"; };
+		228F402EADBBBA4F2580B406BD4D313C /* Pods-ESMusicPodLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESMusicPodLib_Tests-dummy.m"; sourceTree = "<group>"; };
+		28DE9305E77EDC675CD86D1EFFC3410F /* Pods-ESMusicPodLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESMusicPodLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3149010FBC3DE03D7A6A3A7EDB6302F2 /* Pods-ESMusicPodLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESMusicPodLib_Tests-Info.plist"; sourceTree = "<group>"; };
+		363640913042D2F6DB389B43C5AB2FE6 /* Pods-ESMusicPodLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESMusicPodLib_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4025886BC016142D3864AD6A4CE04480 /* Pods-ESMusicPodLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESMusicPodLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		41AF0F6C7FEBDB556EFCFFF567821EE9 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ESMusicPodLib/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		4F9F6639126F8B35AAE956EE0F5E6DB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5063737D301DFA91F646B768B69FF522 /* Pods-ESMusicPodLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESMusicPodLib_Example-Info.plist"; sourceTree = "<group>"; };
+		51DF0210C585BC933B592227734B445F /* Pods-ESMusicPodLib_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ESMusicPodLib_Example"; path = Pods_ESMusicPodLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CDEA6A2F5772C2132AC24D0649A546 /* Pods-ESMusicPodLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESMusicPodLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		584DB2C14BA648074DB19980BFFE85CE /* Pods-ESMusicPodLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESMusicPodLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5AFC42D93CC92EE830ACC4A727BF2D39 /* ESMusicPodLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESMusicPodLib.release.xcconfig; sourceTree = "<group>"; };
+		70DB2C86D567BCE5AD0B345D7A604528 /* Pods-ESMusicPodLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESMusicPodLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		878B216F083A742F2106B8D5E5ABE630 /* Pods-ESMusicPodLib_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ESMusicPodLib_Tests"; path = Pods_ESMusicPodLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB690DE35A8BF916F93B71D5CC2BEF9 /* ESMusicPodLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESMusicPodLib; path = ESMusicPodLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC8C47C0AEAA55FFDA411B9EF75BE94 /* Pods-ESMusicPodLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESMusicPodLib_Example.modulemap"; sourceTree = "<group>"; };
+		97BA572EBB529E1DC36F8C88ACE1D602 /* ESMusicPodLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESMusicPodLib-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E2F4231D2BD28D621794E08019A1E28 /* Pods-ESMusicPodLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESMusicPodLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D85B61B6F20F5274F7D73EA70480DF /* Pods-ESMusicPodLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESMusicPodLib_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B7D3A94FE2A29CA80563D5C5E525CA45 /* Pods-ESMusicPodLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESMusicPodLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C230493E29A405DE9ED6D6BB78C54A4D /* ESMusicPodLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESMusicPodLib-prefix.pch"; sourceTree = "<group>"; };
+		C7494B2BB72543EE66E4895901D8E5CB /* ESMusicPodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESMusicPodLib.debug.xcconfig; sourceTree = "<group>"; };
+		C9559388AE04A314BBD3F816653E37E2 /* Pods-ESMusicPodLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESMusicPodLib_Example-dummy.m"; sourceTree = "<group>"; };
+		CED63D1AACD96C1B87008385105265D4 /* Pods-ESMusicPodLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESMusicPodLib_Example-umbrella.h"; sourceTree = "<group>"; };
+		DBC5CEB4994ECF20611768077B21E95D /* Pods-ESMusicPodLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESMusicPodLib_Tests.modulemap"; sourceTree = "<group>"; };
+		DD7F7518E78A84090C5FBF7FBB53C425 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1349E9D2AC5E0A4E60937784CA35E794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DED56F8818304A1F0B7335A78F3F7E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3095C223D092AD4B53CC936B24C974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14A52CD4DFE7B34FE410DA9559B9579 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937E1523A342BF0B1C40ADA20E337889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7360C4EB664BCE5B422389DA4A3F268 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0977EBF78F53AF8A23AA7D36A86B6F04 /* ESMusicPodLib */ = {
+			isa = PBXGroup;
+			children = (
+				41AF0F6C7FEBDB556EFCFFF567821EE9 /* ReplaceMe.m */,
+				F75BA215CD48756E0BF42D0DD9A59122 /* Pod */,
+				47B3CBB3D69188122609B381AE89741C /* Support Files */,
+			);
+			name = ESMusicPodLib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1DB3868ACBD94E69FCDBC480FB4CB1B0 /* Pods-ESMusicPodLib_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DBC5CEB4994ECF20611768077B21E95D /* Pods-ESMusicPodLib_Tests.modulemap */,
+				57CDEA6A2F5772C2132AC24D0649A546 /* Pods-ESMusicPodLib_Tests-acknowledgements.markdown */,
+				28DE9305E77EDC675CD86D1EFFC3410F /* Pods-ESMusicPodLib_Tests-acknowledgements.plist */,
+				228F402EADBBBA4F2580B406BD4D313C /* Pods-ESMusicPodLib_Tests-dummy.m */,
+				3149010FBC3DE03D7A6A3A7EDB6302F2 /* Pods-ESMusicPodLib_Tests-Info.plist */,
+				A0D85B61B6F20F5274F7D73EA70480DF /* Pods-ESMusicPodLib_Tests-umbrella.h */,
+				4025886BC016142D3864AD6A4CE04480 /* Pods-ESMusicPodLib_Tests.debug.xcconfig */,
+				584DB2C14BA648074DB19980BFFE85CE /* Pods-ESMusicPodLib_Tests.release.xcconfig */,
+			);
+			name = "Pods-ESMusicPodLib_Tests";
+			path = "Target Support Files/Pods-ESMusicPodLib_Tests";
+			sourceTree = "<group>";
+		};
+		47B3CBB3D69188122609B381AE89741C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19E29B85D41764379186745960C312E8 /* ESMusicPodLib.modulemap */,
+				097BE382107BDE2F51331343EE5BC5C4 /* ESMusicPodLib-dummy.m */,
+				1B4D83EF25B3B991870C9737A6856ED9 /* ESMusicPodLib-Info.plist */,
+				C230493E29A405DE9ED6D6BB78C54A4D /* ESMusicPodLib-prefix.pch */,
+				97BA572EBB529E1DC36F8C88ACE1D602 /* ESMusicPodLib-umbrella.h */,
+				C7494B2BB72543EE66E4895901D8E5CB /* ESMusicPodLib.debug.xcconfig */,
+				5AFC42D93CC92EE830ACC4A727BF2D39 /* ESMusicPodLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ESMusicPodLib";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A2D60AE3A8DF26F814504BC7795AA077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DB690DE35A8BF916F93B71D5CC2BEF9 /* ESMusicPodLib */,
+				51DF0210C585BC933B592227734B445F /* Pods-ESMusicPodLib_Example */,
+				878B216F083A742F2106B8D5E5ABE630 /* Pods-ESMusicPodLib_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B46934EBA773D40E73B97B127C79B273 /* Pods-ESMusicPodLib_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8DC8C47C0AEAA55FFDA411B9EF75BE94 /* Pods-ESMusicPodLib_Example.modulemap */,
+				B7D3A94FE2A29CA80563D5C5E525CA45 /* Pods-ESMusicPodLib_Example-acknowledgements.markdown */,
+				70DB2C86D567BCE5AD0B345D7A604528 /* Pods-ESMusicPodLib_Example-acknowledgements.plist */,
+				C9559388AE04A314BBD3F816653E37E2 /* Pods-ESMusicPodLib_Example-dummy.m */,
+				363640913042D2F6DB389B43C5AB2FE6 /* Pods-ESMusicPodLib_Example-frameworks.sh */,
+				5063737D301DFA91F646B768B69FF522 /* Pods-ESMusicPodLib_Example-Info.plist */,
+				CED63D1AACD96C1B87008385105265D4 /* Pods-ESMusicPodLib_Example-umbrella.h */,
+				9E2F4231D2BD28D621794E08019A1E28 /* Pods-ESMusicPodLib_Example.debug.xcconfig */,
+				1225C49ECE34CD20EB4175B46E7AD74B /* Pods-ESMusicPodLib_Example.release.xcconfig */,
+			);
+			name = "Pods-ESMusicPodLib_Example";
+			path = "Target Support Files/Pods-ESMusicPodLib_Example";
+			sourceTree = "<group>";
+		};
+		BD14B6C9E4B4945E45F77C877A422AA1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0977EBF78F53AF8A23AA7D36A86B6F04 /* ESMusicPodLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C34F624CE5BBE011CD7FC035B8A5C629 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B46934EBA773D40E73B97B127C79B273 /* Pods-ESMusicPodLib_Example */,
+				1DB3868ACBD94E69FCDBC480FB4CB1B0 /* Pods-ESMusicPodLib_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BD14B6C9E4B4945E45F77C877A422AA1 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A2D60AE3A8DF26F814504BC7795AA077 /* Products */,
+				C34F624CE5BBE011CD7FC035B8A5C629 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F75BA215CD48756E0BF42D0DD9A59122 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				015695C39A6CB1E634462F54D340CBD3 /* ESMusicPodLib.podspec */,
+				4F9F6639126F8B35AAE956EE0F5E6DB1 /* LICENSE */,
+				DD7F7518E78A84090C5FBF7FBB53C425 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F06099E980726FEF69D601CDD8B6B72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD785AD7A0BA7154608BE1EF7B1EF10D /* Pods-ESMusicPodLib_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94BE5223BBD778307DA85CFF812403AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30B41F0A2809403BEF117784FDE8491 /* Pods-ESMusicPodLib_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DD47DB299E9EE809BE7D2E6331062A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97FF4FE52BADAE8889B59E4DCAB1FC1 /* ESMusicPodLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		77F67179F819413C0742483910BFED20 /* ESMusicPodLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D6646ADFFA95EA1BAF1857AB9096A4 /* Build configuration list for PBXNativeTarget "ESMusicPodLib" */;
+			buildPhases = (
+				A9DD47DB299E9EE809BE7D2E6331062A /* Headers */,
+				4B0018B5DFA6954D5B92582CC24D9751 /* Sources */,
+				6C3095C223D092AD4B53CC936B24C974 /* Frameworks */,
+				2A27F84EFE655F0CCE068321B92426E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESMusicPodLib;
+			productName = ESMusicPodLib;
+			productReference = 8DB690DE35A8BF916F93B71D5CC2BEF9 /* ESMusicPodLib */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8DF15FCDDAF28300354CB4AD9087F09 /* Pods-ESMusicPodLib_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3438693A342DC1FB388F961A45D84274 /* Build configuration list for PBXNativeTarget "Pods-ESMusicPodLib_Tests" */;
+			buildPhases = (
+				94BE5223BBD778307DA85CFF812403AB /* Headers */,
+				0D3BBDF16E148E94D35B94ED03A67ED1 /* Sources */,
+				1349E9D2AC5E0A4E60937784CA35E794 /* Frameworks */,
+				75985B6A524A52C3B4E9FA252549C7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				452801A679CC131E594AD081D61A47C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-ESMusicPodLib_Tests";
+			productName = Pods_ESMusicPodLib_Tests;
+			productReference = 878B216F083A742F2106B8D5E5ABE630 /* Pods-ESMusicPodLib_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB557324FED2C4261F652977411672F5 /* Pods-ESMusicPodLib_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB1FF73E75AD5F55C179D1A7FC00466 /* Build configuration list for PBXNativeTarget "Pods-ESMusicPodLib_Example" */;
+			buildPhases = (
+				6F06099E980726FEF69D601CDD8B6B72 /* Headers */,
+				2F4C7AA4D911B2F34F0BC199092260A9 /* Sources */,
+				937E1523A342BF0B1C40ADA20E337889 /* Frameworks */,
+				1A098C48AE6D267D8F0112A830C0D37E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE275337216F69327AC89B4535BFF607 /* PBXTargetDependency */,
+			);
+			name = "Pods-ESMusicPodLib_Example";
+			productName = Pods_ESMusicPodLib_Example;
+			productReference = 51DF0210C585BC933B592227734B445F /* Pods-ESMusicPodLib_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A2D60AE3A8DF26F814504BC7795AA077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77F67179F819413C0742483910BFED20 /* ESMusicPodLib */,
+				EB557324FED2C4261F652977411672F5 /* Pods-ESMusicPodLib_Example */,
+				B8DF15FCDDAF28300354CB4AD9087F09 /* Pods-ESMusicPodLib_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A098C48AE6D267D8F0112A830C0D37E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A27F84EFE655F0CCE068321B92426E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75985B6A524A52C3B4E9FA252549C7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3BBDF16E148E94D35B94ED03A67ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868F55EFF2680AC1BE501BCEA94085E4 /* Pods-ESMusicPodLib_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4C7AA4D911B2F34F0BC199092260A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757AEDF30B36933CBA6F2741078BDCE5 /* Pods-ESMusicPodLib_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0018B5DFA6954D5B92582CC24D9751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670F0DABD31913548910CEAF36E222B5 /* ESMusicPodLib-dummy.m in Sources */,
+				40A1E7EB064E87B47DFFE8E550B57105 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		452801A679CC131E594AD081D61A47C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ESMusicPodLib_Example";
+			target = EB557324FED2C4261F652977411672F5 /* Pods-ESMusicPodLib_Example */;
+			targetProxy = BC4B66B96C6C2939FE8D9AF033FF3349 /* PBXContainerItemProxy */;
+		};
+		FE275337216F69327AC89B4535BFF607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ESMusicPodLib;
+			target = 77F67179F819413C0742483910BFED20 /* ESMusicPodLib */;
+			targetProxy = 82FB615C50B7C8650F19FA8C264026C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E994C700046530D102DF80DCD28B2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFC42D93CC92EE830ACC4A727BF2D39 /* ESMusicPodLib.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESMusicPodLib/ESMusicPodLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESMusicPodLib/ESMusicPodLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ESMusicPodLib/ESMusicPodLib.modulemap";
+				PRODUCT_MODULE_NAME = ESMusicPodLib;
+				PRODUCT_NAME = ESMusicPodLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4135EE67C9FFA74CBACA12A8F566CC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1225C49ECE34CD20EB4175B46E7AD74B /* Pods-ESMusicPodLib_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESMusicPodLib_Example/Pods-ESMusicPodLib_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESMusicPodLib_Example/Pods-ESMusicPodLib_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A988457353583694719885C682FE848F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4025886BC016142D3864AD6A4CE04480 /* Pods-ESMusicPodLib_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESMusicPodLib_Tests/Pods-ESMusicPodLib_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESMusicPodLib_Tests/Pods-ESMusicPodLib_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57770AD1167C1A02C163A4248FA2F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7494B2BB72543EE66E4895901D8E5CB /* ESMusicPodLib.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESMusicPodLib/ESMusicPodLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESMusicPodLib/ESMusicPodLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ESMusicPodLib/ESMusicPodLib.modulemap";
+				PRODUCT_MODULE_NAME = ESMusicPodLib;
+				PRODUCT_NAME = ESMusicPodLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D1058CE6E285115128AEAA58F6BFF7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584DB2C14BA648074DB19980BFFE85CE /* Pods-ESMusicPodLib_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESMusicPodLib_Tests/Pods-ESMusicPodLib_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESMusicPodLib_Tests/Pods-ESMusicPodLib_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA7C629590C4C96531A056E42BEC08D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2F4231D2BD28D621794E08019A1E28 /* Pods-ESMusicPodLib_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESMusicPodLib_Example/Pods-ESMusicPodLib_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESMusicPodLib_Example/Pods-ESMusicPodLib_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3438693A342DC1FB388F961A45D84274 /* Build configuration list for PBXNativeTarget "Pods-ESMusicPodLib_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A988457353583694719885C682FE848F /* Debug */,
+				D1058CE6E285115128AEAA58F6BFF7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D6646ADFFA95EA1BAF1857AB9096A4 /* Build configuration list for PBXNativeTarget "ESMusicPodLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57770AD1167C1A02C163A4248FA2F13 /* Debug */,
+				1E994C700046530D102DF80DCD28B2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB1FF73E75AD5F55C179D1A7FC00466 /* Build configuration list for PBXNativeTarget "Pods-ESMusicPodLib_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C629590C4C96531A056E42BEC08D8 /* Debug */,
+				4135EE67C9FFA74CBACA12A8F566CC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

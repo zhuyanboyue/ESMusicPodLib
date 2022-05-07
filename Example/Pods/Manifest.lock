@@ -1,0 +1,16 @@
+PODS:
+  - ESMusicPodLib (0.1.0)
+
+DEPENDENCIES:
+  - ESMusicPodLib (from `../`)
+
+EXTERNAL SOURCES:
+  ESMusicPodLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ESMusicPodLib: d9120bfc5530768fb8ebfb824eb08e08dbb858d4
+
+PODFILE CHECKSUM: aafc7fe8c61a45d1b713c2fe5df83852bb9ed9bf
+
+COCOAPODS: 1.11.2

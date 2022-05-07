@@ -1,0 +1,22 @@
+{
+  "name": "ESMusicPodLib",
+  "version": "0.1.0",
+  "summary": "A short description of ESMusicPodLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyanboyue@163.com/ESMusicPodLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyanboyue@163.com": "mac.zhou@touchgui.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyanboyue@163.com/ESMusicPodLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ESMusicPodLib/Classes/**/*"
+}

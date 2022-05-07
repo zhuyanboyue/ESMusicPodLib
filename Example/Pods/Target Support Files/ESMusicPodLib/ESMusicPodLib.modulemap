@@ -1,0 +1,6 @@
+framework module ESMusicPodLib {
+  umbrella header "ESMusicPodLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

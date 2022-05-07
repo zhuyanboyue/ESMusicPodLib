@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ESMusicPodLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ESMusicPodLib.'
+  s.summary          = '封装 别人的ESTMusicPlayer 为 Pod形式'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -36,7 +36,12 @@ TODO: Add long description of the pod here.
   #   'ESMusicPodLib' => ['ESMusicPodLib/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
+  s.dependency 'DOUAudioStreamer', '0.2.11'
+  s.dependency 'SDWebImage'
+  s.dependency 'GVUserDefaults'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'Mantle', '1.5.5'
+  s.dependency 'AFNetworking', '~> 2.0'
 end
