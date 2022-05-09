@@ -1,12 +1,5 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
-#import "Enesco.h"
-
-#import "UIConstant.h"
-#import "SDWebImage.h"
-#import "BaseHelper.h"
-#define APIBaseURL @"http://tinger.herokuapp.com/api"
-
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -17,3 +10,4 @@
 #endif
 #endif
 
+#import "Enesco.h"

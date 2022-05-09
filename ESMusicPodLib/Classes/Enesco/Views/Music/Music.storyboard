@@ -51,7 +51,7 @@
                                             <constraint firstAttribute="height" constant="30" id="b1H-YI-76F"/>
                                             <constraint firstAttribute="width" constant="46" id="m7V-4R-She"/>
                                         </constraints>
-                                        <state key="normal" image="menu"/>
+                                        <state key="normal" image="menu.png"/>
                                         <connections>
                                             <action selector="didTouchMenuButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="8dF-XM-cqe"/>
                                         </connections>
@@ -71,7 +71,7 @@
                                             <constraint firstAttribute="height" constant="30" id="2Ft-tX-g9G"/>
                                             <constraint firstAttribute="width" constant="46" id="5fw-xw-9au"/>
                                         </constraints>
-                                        <state key="normal" image="arrow_down"/>
+                                        <state key="normal" image="arrow_down.png"/>
                                         <connections>
                                             <action selector="didTouchDismissButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="sbR-6E-VXp"/>
                                         </connections>
@@ -92,7 +92,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-CT-WwR">
                                 <rect key="frame" x="0.0" y="89" width="414" height="565"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="fzG-5a-IF7">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="fzG-5a-IF7">
                                         <rect key="frame" x="35" y="110.5" width="344" height="344"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fzG-5a-IF7" secondAttribute="height" multiplier="1:1" id="KGH-S0-7I6"/>
@@ -114,35 +114,35 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbv-ms-SBQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="83" height="64"/>
-                                                <state key="normal" image="shuffle_icon"/>
+                                                <state key="normal" image="shuffle_icon.png"/>
                                                 <connections>
                                                     <action selector="didTouchMusicCycleButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="8kZ-M9-beA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgg-wr-cOh">
                                                 <rect key="frame" x="83" y="0.0" width="82.5" height="64"/>
-                                                <state key="normal" image="prev_song"/>
+                                                <state key="normal" image="prev_song.png"/>
                                                 <connections>
                                                     <action selector="playPreviousMusic:" destination="eVa-CY-Nae" eventType="touchUpInside" id="Vet-Qa-kzc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuX-y5-JJt">
                                                 <rect key="frame" x="165.5" y="0.0" width="83" height="64"/>
-                                                <state key="normal" image="big_play_button"/>
+                                                <state key="normal" image="big_play_button.png"/>
                                                 <connections>
                                                     <action selector="didTouchMusicToggleButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="zuE-lu-uSR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFV-g7-xwY">
                                                 <rect key="frame" x="248.5" y="0.0" width="82.5" height="64"/>
-                                                <state key="normal" image="next_song"/>
+                                                <state key="normal" image="next_song.png"/>
                                                 <connections>
                                                     <action selector="playNextMusic:" destination="eVa-CY-Nae" eventType="touchUpInside" id="oaN-ox-gLX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-17-pXR">
                                                 <rect key="frame" x="331" y="0.0" width="83" height="64"/>
-                                                <state key="normal" image="more_icon"/>
+                                                <state key="normal" image="more_icon.png"/>
                                                 <connections>
                                                     <action selector="didTouchMoreButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="FSn-gz-EUi"/>
                                                 </connections>
@@ -241,7 +241,7 @@
                                             <constraint firstAttribute="height" constant="40" id="GTM-Jo-xZG"/>
                                             <constraint firstAttribute="width" constant="40" id="vQ6-Si-EO6"/>
                                         </constraints>
-                                        <state key="normal" image="empty_heart"/>
+                                        <state key="normal" image="empty_heart.png"/>
                                         <connections>
                                             <action selector="didTouchFavoriteButton:" destination="eVa-CY-Nae" eventType="touchUpInside" id="hbF-rr-piL"/>
                                         </connections>
@@ -326,14 +326,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow_down" width="22.5" height="13.5"/>
-        <image name="big_play_button" width="60" height="60"/>
-        <image name="empty_heart" width="23" height="21.5"/>
-        <image name="menu" width="25" height="17.5"/>
-        <image name="more_icon" width="25" height="23.5"/>
-        <image name="music_placeholder" width="308" height="308"/>
-        <image name="next_song" width="20" height="28"/>
-        <image name="prev_song" width="20" height="28"/>
-        <image name="shuffle_icon" width="17.5" height="14"/>
+        <image name="arrow_down.png" width="22.5" height="13.5"/>
+        <image name="big_play_button.png" width="60" height="60"/>
+        <image name="empty_heart.png" width="23" height="21.5"/>
+        <image name="menu.png" width="25" height="17.5"/>
+        <image name="more_icon.png" width="25" height="23.5"/>
+        <image name="music_placeholder.png" width="308" height="308"/>
+        <image name="next_song.png" width="20" height="28"/>
+        <image name="prev_song.png" width="20" height="28"/>
+        <image name="shuffle_icon.png" width="17.5" height="14"/>
     </resources>
 </document>

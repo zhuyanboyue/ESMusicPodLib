@@ -75,7 +75,8 @@
 }
 
 - (NSDictionary *)dictionaryWithContentsOfJSONString:(NSString *)fileLocation {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:[fileLocation stringByDeletingPathExtension] ofType:@"json"];
+    
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:[fileLocation stringByDeletingPathExtension] ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     __autoreleasing NSError* error = nil;
     id result = [NSJSONSerialization JSONObjectWithData:data

@@ -19,6 +19,12 @@
     "ios": "9.0"
   },
   "source_files": "ESMusicPodLib/Classes/**/*",
+  "resource_bundles": {
+    "ESMusicPodLib": [
+      "ESMusicPodLib/Assets/Image/*.png"
+    ]
+  },
+  "prefix_header_contents": "#import \"Enesco.h\"",
   "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": "UIKit",
   "dependencies": {

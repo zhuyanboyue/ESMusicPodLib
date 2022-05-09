@@ -15,6 +15,7 @@
 #import "UIView+Animations.h"
 #import "MusicViewController.h"
 #import "MusicListViewController.h"
+#import "Enesco.h"
 #import "BaseEntity.h"
 #import "MusicEntity.h"
 #import "MusicListEntity.h"
