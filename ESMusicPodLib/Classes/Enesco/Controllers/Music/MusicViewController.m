@@ -18,6 +18,8 @@
 #import "NSString+Additions.h"
 #import "MBProgressHUD.h"
 
+#import "Enesco.h"
+
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
 static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;

@@ -10,7 +10,7 @@
 
 
 #import "UIConstant.h"
-#import "SDWebImage.h"
+#import <SDWebImage/SDWebImage.h>
 #import "BaseHelper.h"
 #define APIBaseURL @"http://tinger.herokuapp.com/api"
 

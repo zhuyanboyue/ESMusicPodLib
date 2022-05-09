@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 The EST Group. All rights reserved.
 //
 
-#import "GVUserDefaults.h"
+#import <GVUserDefaults/GVUserDefaults.h>
 
 typedef NS_ENUM(NSInteger, MusicCycleType) {
     MusicCycleTypeLoopAll = 0,

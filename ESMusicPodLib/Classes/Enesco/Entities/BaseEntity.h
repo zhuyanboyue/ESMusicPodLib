@@ -6,10 +6,8 @@
 //  Copyright (c) 2015 The EST Group. All rights reserved.
 //
 
-#import "MTLModel.h"
-#import "MTLJSONAdapter.h"
-#import "MTLValueTransformer.h"
-#import "NSValueTransformer+MTLPredefinedTransformerAdditions.h"
+
+#import <Mantle/Mantle.h>
 
 @interface BaseEntity : MTLModel <MTLJSONSerializing>
 #pragma mark - Class Methods to create Entity

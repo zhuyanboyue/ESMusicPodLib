@@ -6,7 +6,7 @@
 //
 
 #import "MusicListCell.h"
-
+#import "Enesco.h"
 @interface MusicListCell ()
 @property (weak, nonatomic) IBOutlet UILabel *musicNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *musicTitleLabel;

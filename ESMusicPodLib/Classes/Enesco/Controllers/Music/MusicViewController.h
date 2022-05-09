@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DOUAudioStreamer.h"
+#import <DOUAudioStreamer/DOUAudioStreamer.h>
 #import "GVUserDefaults+Properties.h"
 #import "MusicEntity.h"
 
