@@ -24,6 +24,14 @@ PODS:
   - ESMusicPodLib (0.1.0):
     - AFNetworking (~> 2.0)
     - DOUAudioStreamer (= 0.2.11)
+    - ESMusicPodLib/Enesco (= 0.1.0)
+    - GVUserDefaults
+    - Mantle (= 1.5.5)
+    - MBProgressHUD
+    - SDWebImage
+  - ESMusicPodLib/Enesco (0.1.0):
+    - AFNetworking (~> 2.0)
+    - DOUAudioStreamer (= 0.2.11)
     - GVUserDefaults
     - Mantle (= 1.5.5)
     - MBProgressHUD
@@ -56,7 +64,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   DOUAudioStreamer: 8aefc3e80eb6c01ec89fa3c30743c660e8c55bae
-  ESMusicPodLib: 68188db21f77724b787dea0fc81ad363c03c393a
+  ESMusicPodLib: 467f5a9af74efe5644ed8dd40ecac943012274c0
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   Mantle: 1b29072a707453975b200a173cf77ec1e2810b75
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406

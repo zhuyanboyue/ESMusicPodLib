@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "封装 别人的ESTMusicPlayer 为 Pod形式",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/zhuyanboyue@163.com/ESMusicPodLib",
+  "homepage": "https://github.com/zhuyanboyue/ESMusicPodLib",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,20 +12,15 @@
     "zhuyanboyue@163.com": "mac.zhou@touchgui.com"
   },
   "source": {
-    "git": "https://github.com/zhuyanboyue@163.com/ESMusicPodLib.git",
+    "git": "https://github.com/zhuyanboyue/ESMusicPodLib.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "ESMusicPodLib/Classes/**/*",
-  "resource_bundles": {
-    "ESMusicPodLib": [
-      "ESMusicPodLib/Assets/Image/*.png"
-    ]
-  },
+  "source_files": "ESMusicPodLib/Enesco.h",
+  "resources": "ESMusicPodLib/ESMusicPodLib.bundle",
   "prefix_header_contents": "#import \"Enesco.h\"",
-  "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": "UIKit",
   "dependencies": {
     "DOUAudioStreamer": [
@@ -46,5 +41,11 @@
     "AFNetworking": [
       "~> 2.0"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Enesco",
+      "source_files": "ESMusicPodLib/Enesco/**/*"
+    }
+  ]
 }
