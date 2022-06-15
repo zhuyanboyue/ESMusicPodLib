@@ -20,7 +20,7 @@
   },
   "source_files": "ESMusicPodLib/Enesco.h",
   "resources": "ESMusicPodLib/ESMusicPodLib.bundle",
-  "prefix_header_contents": "#import \"Enesco.h\"",
+  "prefix_header_file": "ESMusicPodLib/Enesco.h",
   "frameworks": "UIKit",
   "dependencies": {
     "DOUAudioStreamer": [

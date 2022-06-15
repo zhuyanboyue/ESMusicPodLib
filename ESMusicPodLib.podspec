@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ESMusicPodLib'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '封装 别人的ESTMusicPlayer 为 Pod形式'
 
 # This description is used to generate tags and improve search results.
@@ -21,29 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhuyanboyue@163.com/ESMusicPodLib'
+  s.homepage         = 'https://github.com/zhuyanboyue/ESMusicPodLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhuyanboyue@163.com' => 'mac.zhou@touchgui.com' }
-  s.source           = { :git => 'https://github.com/zhuyanboyue@163.com/ESMusicPodLib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/zhuyanboyue/ESMusicPodLib.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ESMusicPodLib/Classes/**/*'
+  s.source_files = 'ESMusicPodLib/Enesco.h'
+  s.subspec 'Enesco' do |ss|
+    ss.source_files = 'ESMusicPodLib/Enesco/**/*'
+  end
   
-   s.resource_bundles = {
-     'ESMusicPodLib' => ['ESMusicPodLib/Assets/Image/*.png']
-   }
-  
-  #s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
+  s.resource = 'ESMusicPodLib/ESMusicPodLib.bundle'
+  s.prefix_header_file = 'ESMusicPodLib/Enesco.h'
 
-  s.prefix_header_contents = ' #import "Enesco.h" '
 
-  #s.prefix_header_file = '/ESMusicPodLib/Classes/Enesco/ESEnesco-prefix.pch'
-  # s.prefix_header_file = 'iphone/include/prefix.pch'
-
-  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'DOUAudioStreamer', '0.2.11'
   s.dependency 'SDWebImage'
@@ -51,4 +45,5 @@ TODO: Add long description of the pod here.
   s.dependency 'MBProgressHUD'
   s.dependency 'Mantle', '1.5.5'
   s.dependency 'AFNetworking', '~> 2.0'
+
 end

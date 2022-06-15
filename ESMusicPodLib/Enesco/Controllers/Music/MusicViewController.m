@@ -18,7 +18,7 @@
 #import "NSString+Additions.h"
 #import "MBProgressHUD.h"
 
-#import "Enesco.h"
+//#import "Enesco.h"
 
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
@@ -42,6 +42,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 @property (weak, nonatomic) IBOutlet UIButton *nextMusicButton;
 @property (weak, nonatomic) IBOutlet UIButton *musicToggleButton;
 @property (weak, nonatomic) IBOutlet UIButton *musicCycleButton;
+@property (weak, nonatomic) IBOutlet UIButton *closeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
+
 @property (strong, nonatomic) MusicEntity *musicEntity;
 @property (strong, nonatomic) UIVisualEffectView *visualEffectView;
 @property (strong, nonatomic) MusicIndicator *musicIndicator;
@@ -52,6 +55,12 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 @property (nonatomic) NSTimer *musicDurationTimer;
 @property (nonatomic) BOOL musicIsPlaying;
 @property (nonatomic) NSInteger currentIndex;
+
+
+
+
+
+
 @end
 
 @implementation MusicViewController
@@ -78,6 +87,13 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     _originArray = @[].mutableCopy;
     _randomArray = [[NSMutableArray alloc] initWithCapacity:0];
     [self addPanRecognizer];
+
+    [self.musicMenuButton setImage:[NSBundle imageNamed:@"menu"] forState:(UIControlStateNormal)];
+    [self.closeBtn setImage:[NSBundle imageNamed:@"arrow_down"] forState:(UIControlStateNormal)];
+    self.albumImageView.image = [NSBundle imageNamed:@"music_placeholder"];
+    [self.previousMusicButton setImage:[NSBundle imageNamed:@"prev_song"] forState:(UIControlStateNormal)];
+    [self.nextMusicButton setImage:[NSBundle imageNamed:@"next_song"] forState:(UIControlStateNormal)];
+    [self.moreBtn setImage:[NSBundle imageNamed:@"more_icon"] forState:(UIControlStateNormal)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -148,13 +164,13 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 - (void)updateMusicCycleButton {
     switch (_musicCycleType) {
         case MusicCycleTypeLoopAll:
-            [_musicCycleButton setImage:[UIImage imageNamed:@"loop_all_icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+            [_musicCycleButton setImage:[NSBundle imageNamed:@"loop_all_icon"] forState:UIControlStateNormal];
             break;
         case MusicCycleTypeShuffle:
-            [_musicCycleButton setImage:[UIImage imageNamed:@"shuffle_icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+            [_musicCycleButton setImage:[NSBundle imageNamed:@"shuffle_icon"] forState:UIControlStateNormal];
             break;
         case MusicCycleTypeLoopSingle:
-            [_musicCycleButton setImage:[UIImage imageNamed:@"loop_single_icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+            [_musicCycleButton setImage:[NSBundle imageNamed:@"loop_single_icon"] forState:UIControlStateNormal];
             break;
             
         default:
@@ -170,9 +186,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 
 - (void)checkMusicFavoritedIcon {
     if ([self hasBeenFavoriteMusic]) {
-        [_favoriteButton setImage:[UIImage imageNamed:@"red_heart" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_favoriteButton setImage:[NSBundle imageNamed:@"red_heart"] forState:UIControlStateNormal];
     } else {
-        [_favoriteButton setImage:[UIImage imageNamed:@"empty_heart" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_favoriteButton setImage:[NSBundle imageNamed:@"empty_heart"] forState:UIControlStateNormal];
     }
 }
 
@@ -182,8 +198,8 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     
     NSString *imageWidth = [NSString stringWithFormat:@"%.f", (SCREEN_WIDTH - 70) * 2];
     NSURL *imageUrl = [BaseHelper qiniuImageCenter:_musicEntity.cover withWidth:imageWidth withHeight:imageWidth];
-    [_backgroudImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"music_placeholder" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil]];
-    [_albumImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"music_placeholder" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil]];
+    [_backgroudImageView sd_setImageWithURL:imageUrl placeholderImage:[NSBundle imageNamed:@"music_placeholder"]];
+    [_albumImageView sd_setImageWithURL:imageUrl placeholderImage:[NSBundle imageNamed:@"music_placeholder"]];
     
     if(![_visualEffectView isDescendantOfView:_backgroudView]) {
         UIVisualEffect *blurEffect;
@@ -253,9 +269,9 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 - (void)setMusicIsPlaying:(BOOL)musicIsPlaying {
     _musicIsPlaying = musicIsPlaying;
     if (_musicIsPlaying) {
-        [_musicToggleButton setImage:[UIImage imageNamed:@"big_pause_button" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_musicToggleButton setImage:[NSBundle imageNamed:@"big_pause_button"] forState:UIControlStateNormal];
     } else {
-        [_musicToggleButton setImage:[UIImage imageNamed:@"big_play_button" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_musicToggleButton setImage:[NSBundle imageNamed:@"big_play_button"] forState:UIControlStateNormal];
     }
 }
 
@@ -504,12 +520,12 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 
 - (void)favoriteMusic {
     _musicEntity.isFavorited = YES;
-    [_favoriteButton setImage:[UIImage imageNamed:@"red_heart" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+    [_favoriteButton setImage:[NSBundle imageNamed:@"red_heart"] forState:UIControlStateNormal];
 }
 
 - (void)unfavoriteMusic {
     _musicEntity.isFavorited = NO;
-    [_favoriteButton setImage:[UIImage imageNamed:@"empty_heart" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+    [_favoriteButton setImage:[NSBundle imageNamed:@"empty_heart"] forState:UIControlStateNormal];
 }
 
 - (BOOL)hasBeenFavoriteMusic {

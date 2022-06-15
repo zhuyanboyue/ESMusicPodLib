@@ -307,8 +307,10 @@
                         <outlet property="backgroudImageView" destination="Bwd-8r-12y" id="e8O-Wn-xg3"/>
                         <outlet property="backgroudView" destination="WPj-Te-9Dc" id="DC5-EB-1fZ"/>
                         <outlet property="beginTimeLabel" destination="Hlb-s4-6cd" id="tH9-d5-idH"/>
+                        <outlet property="closeBtn" destination="1Qm-Oe-F7x" id="3NE-qg-UHo"/>
                         <outlet property="endTimeLabel" destination="2O5-yw-xLd" id="hvS-Aj-ZPh"/>
                         <outlet property="favoriteButton" destination="nBC-NB-0Nk" id="y9E-UJ-6nI"/>
+                        <outlet property="moreBtn" destination="wXY-17-pXR" id="Qj1-1e-XXL"/>
                         <outlet property="musicCycleButton" destination="Nbv-ms-SBQ" id="6vj-OE-4i4"/>
                         <outlet property="musicMenuButton" destination="asX-KC-gxh" id="Bdz-MS-GmK"/>
                         <outlet property="musicNameLabel" destination="fE4-kx-vCa" id="ka8-XI-GCZ"/>

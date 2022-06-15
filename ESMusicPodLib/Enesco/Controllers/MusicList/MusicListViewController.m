@@ -17,6 +17,8 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 @end
 
+static NSString * cellIdentifier = @"musicListCell";
+
 @implementation MusicListViewController
 
 - (void)viewDidLoad {
@@ -24,7 +26,10 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.navigationItem.title = @"Music List";
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"MusicListCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:@"musicListCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MusicListCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:cellIdentifier];
+    
+//    [self.tableView registerNib:[NSBundle nibNamed:cellIdentifier] forCellReuseIdentifier:cellIdentifier];
+    
     
 
     [self headerRefreshing];
@@ -69,14 +74,14 @@
 # pragma mark - Load data from server
 
 - (void)headerRefreshing {
-    NSDictionary *musicsDict = [self dictionaryWithContentsOfJSONString:@"music_list.json"];
+    NSDictionary *musicsDict = [self dictionaryWithContentsOfJSONString:@"music_list"];
     self.musicEntities = [MusicEntity arrayOfEntitiesFromArray:musicsDict[@"data"]].mutableCopy;
     [self.tableView reloadData];
 }
 
 - (NSDictionary *)dictionaryWithContentsOfJSONString:(NSString *)fileLocation {
     
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:[fileLocation stringByDeletingPathExtension] ofType:@"json"];
+    NSString *filePath = [NSBundle filePath:fileLocation extension:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     __autoreleasing NSError* error = nil;
     id result = [NSJSONSerialization JSONObjectWithData:data
@@ -143,9 +148,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *musicListCell = @"musicListCell";
+
     MusicEntity *music = _musicEntities[indexPath.row];
-    MusicListCell *cell = [tableView dequeueReusableCellWithIdentifier:musicListCell forIndexPath:indexPath];
+    MusicListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.musicNumber = indexPath.row + 1;
     cell.musicEntity = music;
     cell.delegate = self;
